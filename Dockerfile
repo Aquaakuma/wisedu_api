@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-ADD https://github.com/ZimoLoveShuang/wisedu-unified-login-api/releases/download/v1.0.15/wisedu-unified-login-api-v1.0.jar /home/server
+ADD  wisedu-unified-login-api-v1.0.jar /home/server
 ENV TZ=Asia/Shanghai \
     TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata
 RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list \
